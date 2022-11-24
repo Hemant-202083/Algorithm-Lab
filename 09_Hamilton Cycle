@@ -1,7 +1,6 @@
 
 class Hamiltonian:
     def __init__(self, begin):
-        # start
         self.begin = begin
  
         # list to store the cycle path
@@ -30,8 +29,7 @@ class Hamiltonian:
  
             # return to explore more cycles
             return
- 
-        # iterate through the neighbor vertices
+            
         for i in range(len(edges)):
             if adjacencyM[sides][i] == 1 and visited[i] == 0:
                 number = i
@@ -46,7 +44,6 @@ class Hamiltonian:
                 visited[number] = 0
                 self.cycle.pop()
  
-    # function to display the hamiltonian class
     def displayCycle(self):
         names = []
         for v in self.cycle:
@@ -61,10 +58,8 @@ if __name__ == '__main__':
                 [1, 1, 0, 0, 1],
                 [0, 1, 1, 1, 0], ]
  
-  #list mapping of vertices to mark vertex visited
   visited = [0 for x in range(len(edges))]
  
-  #number of vertices in the graph
   N = 5
  
   hamiltonian = Hamiltonian(0)
