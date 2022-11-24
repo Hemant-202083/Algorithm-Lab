@@ -1,4 +1,4 @@
-# Lab 6:Write a function that return the MST using PRIM's Algorithm #
+
 import sys 
 class Graph():
 
@@ -35,7 +35,7 @@ class Graph():
 					key[v] = self.graph[u][v]
 					parent[v] = u
 		self.printMST(parent)
-#driver code to check prims algorithm
+
 g = Graph(4)
 g.graph = 	[[ 1, 2, 0, 6, 0],
 			[ 3, 0, 4, 8, 5 ],
