@@ -1,4 +1,4 @@
-#LAB-9 write a program for hamilton cycle using backtracking
+
 class Hamiltonian:
     def __init__(self, begin):
         # start
@@ -67,7 +67,6 @@ if __name__ == '__main__':
   #number of vertices in the graph
   N = 5
  
-  #Driver code
   hamiltonian = Hamiltonian(0)
   hamiltonian.findCycle()
  
